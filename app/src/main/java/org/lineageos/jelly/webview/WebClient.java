@@ -180,8 +180,8 @@ class WebClient extends WebViewClient {
             if (filter == null) {
                 continue;
             }
-            if (IntentFilterCompat.filterIsBrowser(filter)
-                    && !TextUtils.equals(info.packageName, ourPackageName)) {
+            if (/*IntentFilterCompat.filterIsBrowser(filter)
+                    && */!TextUtils.equals(info.packageName, ourPackageName)) {
                 continue;
             }
 
